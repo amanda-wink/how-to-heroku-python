@@ -59,8 +59,59 @@ Scots language word meaning to skip over water, or to skip stones.
 </body>
 </html>
 """
+
+second_page = """
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>USS Hannah</title>
+  <meta name="description" content="USS Hannah">
+  <meta name="author" content="Amanda">
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #303030;
+  max-width: 40rem;
+  padding: 2rem;
+  margin: auto;
+  background: #FEF4FF;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #2ECC40;
+}
+h1, h2, strong {
+  color: #303030;
+}
+</style>
+</head>
+
+<body>
+  <h2>USS Hannah - Brief History</h2>
+
+<p>
+The USS Hannah was a schooner and the first armed American Naval vessel. The USS Hannah was commissioned
+on September 2, 1775 by George Washington. She set sail on September 5, 1775 from Beverly Massachusetts.
+After having some interaction with British ships, she ran aground on October 10, 1775. Though the USS 
+Hannah only sailed for about a month, it is claimed as the founding vessel of the United States Navy.
+</p>
+<p>Source: https://military.wikia.org/wiki/USS_Hannah</p>
+</body>
+</html>
+"""
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
     return pagehtml
+
+@app.route("/more")
+def more():
+    return second_page
