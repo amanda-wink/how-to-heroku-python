@@ -56,6 +56,7 @@ Dutch marine artists. The name "schooner" first appeared in eastern
 North America in the early 1700s. The name may be related to a 
 Scots language word meaning to skip over water, or to skip stones.
 </p>
+<a href="/more">{{ USS Hannah }}</a>
 </body>
 </html>
 """
